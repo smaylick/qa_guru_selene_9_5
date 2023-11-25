@@ -1,8 +1,9 @@
 from selene import browser, have, be, by
 import os.path
 
+
 def test_practice_from(browser_management):
-    browser.open('https://demoqa.com/automation-practice-form')
+    browser.open('/automation-practice-form')
     browser.element('#firstName').should(be.blank).type('Sergey')
     browser.element('#lastName').should(be.blank).type('Gavrilenko')
     browser.element('#userEmail').type('serezagavrilenko@gmail.com')
@@ -33,9 +34,3 @@ def test_practice_from(browser_management):
                          'photo.jpg',
                          'Artistic driveway 4, sq.1',
                          'NCR Noida'))
-
-
-
-
-
-
