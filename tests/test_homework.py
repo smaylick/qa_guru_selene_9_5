@@ -4,7 +4,7 @@ from demoqa_tests.pages.registration_page import RegistrationPage
 from demoqa_tests.data.users import test_user
 
 
-def test_registration():
+def test_registration(browser_management):
     registration_page = RegistrationPage()
     with allure.step("Открываем форму регистрации"):
         registration_page.open_registration_page()
